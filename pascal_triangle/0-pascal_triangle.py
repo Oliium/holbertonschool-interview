@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""Pascal's triangle"""
+"""Le Triangle Pascal"""
 
 
 def pascal_triangle(nb_voitures):
+    """Retourne une liste de listes représentant le triangle de Pascal de n."""
     if nb_voitures <= 0:
         return []
     triangle = [[1]]

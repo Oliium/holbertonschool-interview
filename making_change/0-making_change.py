@@ -16,7 +16,7 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
-    # dp[i] = fewest coins needed to make amount i (float('inf') if unreachable)
+    #dp[i] = fewest coins needed to make amount i (float('inf') if unreachable)
     dp = [0] + [float('inf')] * total
     for coin in coins:
         for amount in range(coin, total + 1):
